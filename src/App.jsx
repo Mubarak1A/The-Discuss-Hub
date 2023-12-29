@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
+import Navbar from './Navbar'
 import './App.css'
 
 function App() {
@@ -8,6 +7,7 @@ function App() {
   return (
     <>
       <div className="content">
+        <Navbar />
         <h1>{title}</h1>
       </div>
     </>
