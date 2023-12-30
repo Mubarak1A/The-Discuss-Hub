@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BlogList from "./components/BlogList";
 
 const Home = () => {
     const [blogs, setBlogs] = useState([
@@ -8,7 +9,7 @@ const Home = () => {
     ]);
 
     return ( 
-        
+        <BlogList blogs={blogs} />
      );
 }
  
