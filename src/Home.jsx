@@ -9,7 +9,7 @@ const Home = () => {
     ]);
 
     return ( 
-        <BlogList blogs={blogs} />
+        <BlogList blogs={blogs} title={"All Blogs"} />
      );
 }
  
