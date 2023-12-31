@@ -12,10 +12,10 @@ function App() {
       <Router>
         <div className="content">
           <Switch>
-            <Route path='/'>
+            <Route exact path='/'>
               <Home />
             </Route>
-            <Route path='/create-blog'>
+            <Route exact path='/create-blog'>
               <CreateBlog />
             </Route>
           </Switch>
