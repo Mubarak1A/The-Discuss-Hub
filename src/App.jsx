@@ -8,19 +8,19 @@ function App() {
 
   return (
     <>
+    <Router>
       <Navbar />
-      <Router>
         <div className="content">
           <Switch>
             <Route exact path='/'>
               <Home />
             </Route>
-            <Route exact path='/create-blog'>
+            <Route path='/create-blog'>
               <CreateBlog />
             </Route>
           </Switch>
         </div>
-      </Router>
+    </Router>
     </>
   )
 }
