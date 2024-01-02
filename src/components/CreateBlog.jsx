@@ -19,6 +19,7 @@ const CreateBlog = () => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(blog)
         }).then(() => {
+            setTimeout(() => setIsPending(false))
             history.push('/')
         })
     }
