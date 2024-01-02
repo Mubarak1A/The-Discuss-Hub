@@ -14,7 +14,7 @@ const CreateBlog = () => {
 
         setIsPending(true);
 
-        fetch('https://my-json-server.typicode.com/Mubarak1A/The-Discuss-Hub_Mocked-Server/blogs', {
+        fetch('https://my-json-server.typicode.com/Mubarak1A/The-Discuss-Hub_Mocked-Server/db', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(blog)

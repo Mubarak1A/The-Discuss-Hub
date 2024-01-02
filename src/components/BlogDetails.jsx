@@ -3,11 +3,11 @@ import useFetch from "./usefetch";
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('https://my-json-server.typicode.com/Mubarak1A/The-Discuss-Hub_Mocked-Server/blogs/' + id);
+    const { data: blog, error, isPending } = useFetch('https://my-json-server.typicode.com/Mubarak1A/The-Discuss-Hub_Mocked-Server/db/' + id);
     const history = useHistory();
 
     const handleDelete = () => {
-        fetch('https://my-json-server.typicode.com/Mubarak1A/The-Discuss-Hub_Mocked-Server/blogs/' + id, {
+        fetch('https://my-json-server.typicode.com/Mubarak1A/The-Discuss-Hub_Mocked-Server/db/' + id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');
