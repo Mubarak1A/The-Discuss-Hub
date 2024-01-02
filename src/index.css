@@ -127,3 +127,8 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* not found page */
+.not-found {
+  line-height: 2;
+}
