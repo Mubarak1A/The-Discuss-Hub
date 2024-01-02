@@ -1,3 +1,4 @@
+import BlogDetails from './BlogDetails'
 import CreateBlog from './CreateBlog'
 import Navbar from './Navbar'
 import Home from './home'
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route path='/create-blog'>
               <CreateBlog />
+            </Route>
+            <Route path='/blogs/:id'>
+              <BlogDetails />
             </Route>
           </Switch>
         </div>
