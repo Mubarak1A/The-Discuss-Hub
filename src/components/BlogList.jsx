@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 
 const BlogList = ({ blogs, title }) => {
     const handleDelete = () => {
-        fetch('http://localhost:8000/blogs/' + id, {
+        fetch('https://my-json-server.typicode.com/Mubarak1A/The-Discuss-Hub_Mocked-Server/blogs/' + id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');

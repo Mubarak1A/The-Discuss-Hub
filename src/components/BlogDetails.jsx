@@ -1,14 +1,13 @@
 import { useParams, useHistory } from "react-router-dom";
 import useFetch from "./usefetch";
-import { useState } from "react"
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/' + id);
+    const { data: blog, error, isPending } = useFetch('https://my-json-server.typicode.com/Mubarak1A/The-Discuss-Hub_Mocked-Server/blogs/' + id);
     const history = useHistory();
 
     const handleDelete = () => {
-        fetch('http://localhost:8000/blogs/' + id, {
+        fetch('https://my-json-server.typicode.com/Mubarak1A/The-Discuss-Hub_Mocked-Server/blogs/' + id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');
