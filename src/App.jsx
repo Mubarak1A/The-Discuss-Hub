@@ -1,4 +1,4 @@
-import BlogDetails from './BlogDetails'
+import BlogDetails from './components/BlogDetails'
 import CreateBlog from './CreateBlog'
 import Navbar from './Navbar'
 import Home from './home'
