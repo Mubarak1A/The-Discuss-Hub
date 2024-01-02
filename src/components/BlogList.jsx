@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const BlogList = ({ blogs, title }) => {
+    const handleDelete = () => {
+        fetch('http://localhost:8000/blogs/' + id, {
+            method: 'DELETE'
+        }).then(() => {
+            history.push('/');
+        })
+    }
+
     return ( 
         <div className="home">
             <h2>{ title }</h2>
@@ -10,6 +18,7 @@ const BlogList = ({ blogs, title }) => {
                         <h2>{  blog.title }</h2>
                         <p>Written by: <strong>{ blog.author }</strong></p>
                     </Link>
+                    <button onClick={handleDelete}>Delete Blog</button>
                 </div>
             ))}
         </div>

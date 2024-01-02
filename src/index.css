@@ -61,6 +61,16 @@
   text-decoration: none;
 }
 
+.blog-preview button {
+  background: #4043f1;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 /* blog details page */
 .blog-details h2 {
   font-size: 20px;
