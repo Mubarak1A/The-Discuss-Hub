@@ -2,13 +2,13 @@
     "blogs": [
         { 
             "title": "My New Website",
-            "body": "Why do we use it?\nIt is a long established that the reader will be distracted.",
+            "body": "Why do we use it?\nIt is a long established that the reader will be distracted.\nLorem ipsum dolor sit amet consectetur adipisicing elit.\nSapiente praesentium repellat fugit natus reprehenderit dolor dolores ab itaque accusantium dolorem error officiis doloribus, animi expedita culpa vel temporibus.\nMollitia, ea!",
             "author": "Mario", 
             "id": 1 
         },
         { 
             "title": "Welcome Party",
-            "body": "Why do we use it?\nIt is a long established that the reader will be distracted.",
+            "body": "Why do we use it?\nIt is a long established that the reader will be distracted.\nLorem ipsum dolor sit amet consectetur adipisicing elit.\nSapiente praesentium repellat fugit natus reprehenderit dolor dolores ab itaque accusantium dolorem error officiis doloribus, animi expedita culpa vel temporibus.\nMollitia, ea!",
             "author": "Yoshi",
             "id": 2
         }
